@@ -3,7 +3,7 @@ let foodcard = [
         id: 1,
         imageURL: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/f115e9672d86fd9b874c2453168368e3",
         shopName: "Indian Dhaba",
-        stateName: "South Indian, Sweets, North Indian, Chinese",
+        stateName: "South Indian, Sweets, North Indian",
         rating: 5.5,
         timing: "30 ",
         rate: "200 ",
@@ -32,8 +32,8 @@ let foodcard = [
     {
         id: 4,
         imageURL: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/igxyfqbu82muvgsgusca",
-        shopName: "Munniyandi Villas",
-        stateName: "South Indian, Chinese",
+        shopName: "Adayar Anandha Bhavan",
+        stateName: "South Indian Veg",
         rating: "4.2",
         timing: "24 ",
         rate: "300 ",
@@ -62,8 +62,8 @@ let foodcard = [
     {
         id: 7,
         imageURL: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/igxyfqbu82muvgsgusca",
-        shopName: "Hotel Hakkim Biriyani",
-        stateName: "North Indian, Chiese, Briyani, Ice Cream, Desserts, Indian, Sounth Indian",
+        shopName: "Mani Hotels",
+        stateName: "North Indian, Ice Cream, Desserts, , Sounth Indian",
         rating: "4.4",
         timing: "26 ",
         rate: "500 ",
@@ -112,7 +112,7 @@ let foodcard = [
     {
         id: 13,
         imageURL: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/jcv2oxgfzixwjurtwor5",
-        shopName: "Hotel Mani",
+        shopName: "Hakkim Biriyani",
         stateName: "Biriyani,Tandoor, Chinese",
         rating: "3.8",
         timing: "33 ",
@@ -122,7 +122,7 @@ let foodcard = [
     {
         id: 14,
         imageURL: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/chb45giivaibj7yfmntb",
-        shopName: "amman fast food",
+        shopName: "Amman  food",
         stateName: "North Indian, South Indian, Biriyani ",
         rating: "4.2",
         timing: "36 ",
@@ -172,8 +172,8 @@ let foodcard = [
     {
         id: 19,
         imageURL: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ksxgqcui31ccyzgcfgnh",
-        shopName: "Adayar AnandhaBhavan",
-        stateName: "Healthy Food, South Indian",
+        shopName: "Munniyandi Villas",
+        stateName: "South Indian, chinese, Non Veg",
         rating: "4.6",
         timing: "21 ",
         rate: "250 ",
@@ -192,8 +192,8 @@ let foodcard = [
     {
         id: 21,
         imageURL: "https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/u3cqtyhaazgkmnej6ytv",
-        shopName: "Michell Icecreams",
-        stateName: "Icecream, Milkshakes",
+        shopName: "Madurai Mess",
+        stateName: "South Indian, Biriyani,Non Veg",
         rating: "4.2",
         timing: "32",
         rate: "400",
@@ -249,7 +249,7 @@ function foodlist(inputObj){
  	  let row=document.getElementById("row");
 
  let col=document.createElement("div");
- col.setAttribute("class","col-3");
+ col.setAttribute("class","col-lg-3 col-md-4 col-sm-12");
  
   let hold=document.createElement("div");
  hold.setAttribute("class","hold");
@@ -387,12 +387,13 @@ removecol.forEach((e)=>{
 });
 foodlist(four);
 }
+// order page
 const card = document.querySelectorAll(".card");
 
 for (let i = 0; i < card.length; i++) {
     card[i].addEventListener("click", function () {
 
-        // console.log("btn wrked clicked");
+       
 
        
     });
